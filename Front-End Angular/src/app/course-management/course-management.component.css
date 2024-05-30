@@ -1,0 +1,49 @@
+.course-management {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.course-management h2, h3 {
+  text-align: center;
+}
+
+.course-management form {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-management form div {
+  margin-bottom: 10px;
+}
+
+.course-management form label {
+  font-weight: bold;
+}
+
+.course-management form input, .course-management form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.course-management .error {
+  color: red;
+  font-size: 12px;
+}
+
+/* Delete button styles */
+.course-management .delete-button {
+  background-color: black; /* Updated color to red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.course-management .delete-button:hover {
+  background-color: red;
+}

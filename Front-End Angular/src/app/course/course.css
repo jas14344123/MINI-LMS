@@ -1,0 +1,18 @@
+/* Add this CSS for responsiveness */
+@media only screen and (max-width: 768px) {
+    .search-form-wrapper {
+      height: auto; /* Revert to default height */
+    }
+    .search-form-wrapper form {
+      width: 100%;
+      max-width: 300px; /* Adjust based on your design */
+    }
+  }
+  
+  /* Adjust margins for smaller screens */
+  @media only screen and (max-width: 576px) {
+    .calendar .row {
+      margin-top: 2rem; /* Adjust as needed */
+    }
+  }
+  

@@ -1,0 +1,12 @@
+<div *ngIf="isAdmin" class="announcement-form">
+  <h2 style="color: #007bff;">Add Announcement</h2>
+  <form (ngSubmit)="addAnnouncement()">
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="title" name="title" required>
+    <br>
+    <label for="content">Content:</label>
+    <textarea id="content" [(ngModel)]="content" name="content" required></textarea>
+    <br>
+    <button type="submit" style="background-color: #007bff;">Add Announcement</button>
+  </form>
+</div>

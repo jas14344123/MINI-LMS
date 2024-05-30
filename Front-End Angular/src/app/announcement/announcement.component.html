@@ -1,0 +1,49 @@
+<div class="p-4">
+  <style>
+   .search-form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh; /* Centers vertically */
+    }
+
+   .announcement-container {
+      flex-grow: 1;
+      padding-right: 10px; /* Adjust as needed */
+    }
+
+   .calendar-container {
+      flex-grow: 1;
+      padding-left: 10px; /* Adjust as needed */
+    }
+
+   .section-container {
+      display: flex;
+      flex-direction: row-reverse; /* Reverse the order of the sections */
+    }
+  </style>
+  <div style="display: flex;">
+    <div class="announcement-container">
+      <div class="section-container">
+        <div style="flex-grow: 1;">
+          <br>
+          <app-announcement-form></app-announcement-form>
+          <br>
+          <app-announcement-list></app-announcement-list>
+        </div>
+      </div>
+    </div>
+    <div class="calendar-container">
+      <div class="calendar">
+          <h2>Calendar</h2>
+          <div class="row mt-4">
+              <div class="col-md-12 mb-4">
+                  <input type="date" [(ngModel)]="eventDate" class="form-control mb-3" placeholder="YYYY-MM-DD">
+                  <input type="text" [(ngModel)]="eventDescription" class="form-control mb-3" placeholder="Event Description">
+                  <button (click)="addEvent()" class="btn btn-primary mb-3" style="width: 100%;">Add Event</button>
+                  <div #calendarEl></div> <!-- Calendar element -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
